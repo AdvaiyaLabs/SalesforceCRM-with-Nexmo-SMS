@@ -1,0 +1,80 @@
+<apex:page standardController="Nexmo_SMS__c" extensions="NexController">
+
+	<head>
+<style>
+.requiredInput {
+	display: inline-block;
+}
+
+.detailList label {
+	width: 250px;
+}
+
+.wrapperNexmoLogo {
+	margin: 10px 0;
+}
+
+body .bPageBlock .pbTitle h2.mainTitle {
+	color: #0099c7;
+	font-size: 20px;
+	font-family: "Segoe UI Light", "Segoe UI";
+	padding: 15px 0;
+}
+</style>
+	</head>
+
+	<apex:outputPanel id="wrapperNexmoLogo" layout="block"
+		styleClass="wrapperNexmoLogo">
+		<apex:image id="theImage" value="{!$Resource.NexmoLogo}" width="200" />
+	</apex:outputPanel>
+	<apex:detail subject="{!nSms}" relatedList="true" title="false"
+		inlineEdit="true" rerender="relatedlists" />
+		
+		<!-- Outputpanel for rerender (for inline editing) -->
+	    <apex:outputpanel id="relatedlists" rendered="true">
+	    {!Nexmo_SMS__c.Budget_Amount__c}
+	    </apex:outputpanel>
+
+	<apex:form rendered="{!ISBLANK(nSms.Id)}">
+	{!Nexmo_SMS__c.SMS_Enable__c}
+		<apex:pageBlock title="Configuration Settings">			
+			<apex:pageBlockSection >
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Nexmo Key: " for="[Nexmo_Api_Key__c]" />
+					<apex:inputField value="{!Nexmo_SMS__c.Nexmo_Api_Key__c}"
+						id="Nexmo_Api_Key__c" />
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Nexmo Secret: "
+						for="[Nexmo_Api_Secret__c]" />
+					<apex:inputField value="{!Nexmo_SMS__c.Nexmo_Api_Secret__c}"
+						id="Nexmo_Api_Secret__c" />
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Threshold Amount: " for="[Budget_Amount__c]" />
+					<apex:inputField value="{!Nexmo_SMS__c.Budget_Amount__c}"
+						id="Budget_Amount__c" />
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Enable SMS: "
+						for="[SMS_Enable__c]" />
+					<apex:inputCheckbox id="SMS_Enable__c" value="{!Nexmo_SMS__c.SMS_Enable__c}" selected="{!Nexmo_SMS__c.SMS_Enable__c}" />
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="" for="[btn_save]" />
+					<apex:commandButton action="{!save}" value="Save"
+						id="btn_save" />
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+
+</apex:page>
