@@ -121,13 +121,13 @@ Please follow the below steps to install Salesforce CRM with Nexmo SMS using For
 
     1.  All tabs -&gt; Nexmo Settings
 
-	<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image18.png" width=400>
+		<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image18.png" width=400>
 
-	<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image19.png" width=400>
+		<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image19.png" width=400>
 
 	2. 	Enter **Configuration Settings** details and check **Enable SMS** checkbox to enable SMS functionality. 
 	
-	<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image20.png" width=400>
+		<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image20.png" width=400>
 
 	3.  Click on **Save** button.
 
