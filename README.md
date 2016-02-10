@@ -41,7 +41,7 @@ With **Salesforce CRM with Nexmo SMS** app, organizations can facilitate sales m
 
 -   Allows salesforce CRM admin to enable or disable the SMS notifications functionality.
 
-##Steps to deploy Salesforce with Nexmo SMS app
+##Steps to deploy Salesforce CRM with Nexmo SMS app
 
 1.  Visit the target Git repository using the [URL](https://github.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS.git). Click on **Raw**, the app's ZIP file will be downloaded.
 
@@ -131,7 +131,7 @@ Please follow the below steps to install Salesforce CRM with Nexmo SMS using For
 
 	3.  Click on **Save** button.
 
-##Steps to use the Salesforce CRM with Nexmo SMS app
+##Steps to use Salesforce CRM with Nexmo SMS app
 
 1.  Add a new opportunity
 
