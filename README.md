@@ -43,9 +43,7 @@ With **Salesforce CRM with Nexmo SMS** app, organizations can facilitate sales m
 
 ##Steps to deploy Salesforce CRM with Nexmo SMS app
 
-1.  Visit the target Git repository using the [URL](https://github.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS.git). Click on **Raw**, the app's ZIP file will be downloaded.
-
-	<img src= "https://raw.githubusercontent.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS/master/Docs/image3.png" width=400>
+1.  Visit the target Git repository using the [URL](https://github.com/AdvaiyaLabs/SalesforceCRM-with-Nexmo-SMS.git). Click on **Download Zip**, the app's ZIP file will be downloaded.
 
 2.  Extract ZIP file and use the source code as explained below.
 
